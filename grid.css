@@ -1,0 +1,225 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Montserrat:wght@100&family=Poppins:wght@500&family=Raleway:wght@500;700&family=Roboto:wght@100;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    background-color: #fafafa;
+    scroll-behavior: smooth;
+    font-family: 'Poppins' , sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    width: 120rem;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+  }
+.space {
+    margin: 2rem 0;
+}
+h2,h3{
+    margin: 1rem 0;
+}
+h3{
+    color:salmon;   
+}
+.fa-star{
+    color: salmon;
+    font-size: 1rem;
+}
+.fab{
+    color: salmon;
+    cursor: pointer;
+}
+span{
+    color: blue;
+    margin-left: 3px;
+}
+button {
+    background-color: #ddd;
+    border: none;
+    border-radius: 0.6rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem #222;
+    cursor: pointer;
+    font-size: 1.3rem;
+    padding: .5rem 10px;
+    letter-spacing: 0.1rem;
+    text-transform: capitalize;
+  }
+          
+.container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(12, 1fr);
+}
+/* ----------------------
+header style start
+------------------------ */
+.header {
+    background-color: #ddd;
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.logo {
+    grid-column: span 4;
+}
+.navbar {
+    grid-column: span 8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    margin-top: 24px;
+}
+nav li {
+    margin-right: 1rem;
+}
+
+.menu {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.menu-left {
+    grid-column: span 6;
+
+}
+
+.menu-right {
+    grid-column: span 6;
+
+}
+
+.header4 {
+    grid-column: span 6;
+}
+
+.content {
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.8rem 0 1rem 0;
+    margin: 1.8rem 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-section {
+    grid-column: span 12;
+    background-color: #fff;
+    display: grid;
+    grid-gap: 10px ;
+    color: black;
+    justify-content: space-around;
+}
+.card {
+    grid-column: span 12;
+    display: flex;
+    transition: transform 0.3s;
+    color: black;
+    justify-content: space-around;
+    box-shadow: #ddd;
+    border-radius: 0.6rem;
+    background-color: #ddd;
+    padding: 3rem 1rem;
+
+}
+
+.card1 {
+
+    grid-column: span 4;
+}
+
+.card2 {
+
+    grid-column: span 4;
+}
+
+.card3 {
+    grid-column: span 4;
+}
+/* contact form start */
+.contact-section {
+    background-color: #ddd;
+    grid-column: span 12;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+  .form-control {
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control label {
+    font-size: 1.6rem;
+    flex: 0.3;
+  }
+  input,
+  textarea {
+    flex: 0.5;
+    width: 30rem;
+    padding:  .5rem;
+    border: none;
+    border-radius: 0.6rem;
+  }
+  textarea {
+    resize: none;
+    height: 10vh;
+  }
+
+.footer {
+    grid-column: span 12;
+    display: flex;
+    background-color: #ddd;
+    padding: 2rem 0 3rem 0 ;
+    color: black;
+    justify-content: space-evenly;
+}
+
+.social-icon ul{
+    list-style: none;
+}
+.social-icon li{
+    display:inline-block;
+    margin-right: 15px;
+    font-size: 1.3rem;
+    padding: 5px;
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        grid-column: span 4;
+        justify-content: center;
+    }
+
+    .menu {
+        grid-row: 1;
+        grid-column: span 4;
+        justify-content: center;
+    }
+
+    .contact-section {
+        grid-column: span 4;
+        justify-content: center;
+    }
+    .content {
+        grid-column: span 4;
+        justify-content: center;
+    }
+    .footer{
+        grid-column: span 4;
+        justify-content: center;
+    }
+}
